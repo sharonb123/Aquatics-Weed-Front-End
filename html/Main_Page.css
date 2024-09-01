@@ -7,6 +7,8 @@
 body {
     font-family: "M PLUS Rounded 1c", sans-serif;
     background-color: rgb(194, 176, 127);
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    padding-top: 60px; /* Ensure content is not hidden under fixed header */
 }
 
 .header {
@@ -55,6 +57,7 @@ body {
     padding-top: 20px;
     transition: 0.3s ease;
     z-index: 999;
+    overflow-y: auto; /* Enable vertical scrolling */
 }
 
 .sidebar h2 {
